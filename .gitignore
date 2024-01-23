@@ -4,4 +4,4 @@
 
 # Ignore build directory
 /build/
-/package-lock.json/
+package-lock.json
