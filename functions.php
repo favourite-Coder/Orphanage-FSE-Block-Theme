@@ -199,6 +199,10 @@ class PlaceholderBlock {
 }
 
 new PlaceholderBlock("eventsandblogs");
+//HEADER
+new PlaceholderBlock("header");
+//FOOTER
+new PlaceholderBlock("footer");
 
 // BANNER
 
