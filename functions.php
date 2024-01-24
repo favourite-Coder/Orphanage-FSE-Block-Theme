@@ -243,3 +243,8 @@ new JSXBlock('banner', true, ['fallbackimage' => get_theme_file_uri('/images/lib
 //up line Reason wht Bg image wasn't showing initially, look out for $data
 new JSXBlock('genericheading');
 new JSXBlock('genericbutton');
+
+//SLIDESHOW
+
+new JSXBlock('slideshow', true);
+new JSXBlock('slide', true);
