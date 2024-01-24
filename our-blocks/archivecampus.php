@@ -11,6 +11,8 @@ pageBanner(array(
 <div class="acf-map">
 
 <?php
+
+rewind_posts();
   while(have_posts()) {
     the_post();
     $mapLocation = get_field('map_location');

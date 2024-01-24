@@ -1,5 +1,6 @@
 <?php
 
+rewind_posts();
 while(have_posts()) {
     the_post();
     pageBanner();
@@ -71,7 +72,8 @@ while(have_posts()) {
         if ($homepageEvents->have_posts()) {
           echo '<hr class="section-break">';
         echo '<h2 class="headline headline--medium">Upcoming ' . get_the_title() . ' Events</h2>';
-
+        
+        rewind_posts();
         while($homepageEvents->have_posts()) {
           $homepageEvents->the_post();
           get_template_part('template-parts/content-event');

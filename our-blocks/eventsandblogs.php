@@ -21,6 +21,7 @@
             )
           ));
 
+          rewind_posts();
           while($homepageEvents->have_posts()) {
             $homepageEvents->the_post();
             get_template_part('template-parts/content', 'event');
@@ -38,7 +39,8 @@
           $homepagePosts = new WP_Query(array(
             'posts_per_page' => 2
           ));
-
+          
+          rewind_posts();
           while ($homepagePosts->have_posts()) {
             $homepagePosts->the_post(); ?>
             <div class="event-summary">
