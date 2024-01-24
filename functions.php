@@ -28,7 +28,7 @@ function pageBanner($args = NULL) {
       if (get_field('page_banner_background_image') AND !is_archive() AND !is_home() ) {
         $args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];
       } else {
-        $args['photo'] = get_theme_file_uri('/images/ocean.jpg');
+        $args['photo'] = get_theme_file_uri('/images/building.jpg');
       }
     }
     
@@ -203,6 +203,25 @@ new PlaceholderBlock("eventsandblogs");
 new PlaceholderBlock("header");
 //FOOTER
 new PlaceholderBlock("footer");
+//SINGLE POST
+new PlaceholderBlock("singlepost");
+//PAGE
+new PlaceholderBlock("page");
+//BLOG INDEX
+new PlaceholderBlock("blogindex");
+
+new PlaceholderBlock("programarchive");
+new PlaceholderBlock("singleprogram");
+new PlaceholderBlock("singleprofessor");
+new PlaceholderBlock("mynotes");
+new PlaceholderBlock("archivecampus");
+new PlaceholderBlock("archiveevent");
+new PlaceholderBlock("archive");
+new PlaceholderBlock("pastevents");
+new PlaceholderBlock("search");
+new PlaceholderBlock("searchresults");
+new PlaceholderBlock("singlecampus");
+new PlaceholderBlock("singleevent");
 
 // BANNER
 
