@@ -1,5 +1,5 @@
 wp.blocks.registerBlockType("ourblocktheme/header", {
-    title: "Online University Header",
+    title: "Orphanage  Header",
     edit: function () {
       return wp.element.createElement("div", { className: "our-placeholder-block" }, "Header Placeholder")
     },

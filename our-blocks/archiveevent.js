@@ -1,5 +1,5 @@
 wp.blocks.registerBlockType("ourblocktheme/archiveevent", {
-  title: "Online University Event Archive",
+  title: "Orphanage Event Archive",
   edit: function () {
     return wp.element.createElement("div", { className: "our-placeholder-block" }, "Event Archive Placeholder")
   },
